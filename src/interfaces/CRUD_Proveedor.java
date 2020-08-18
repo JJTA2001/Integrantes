@@ -1,14 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package interfaces;
 
-/**
- *
- * @author JEREMY
- */
+import integrantes.txt.Proveedor;
+import java.util.List;
+
 public interface CRUD_Proveedor {
-    
+    public List listarproveedor();
+    public Proveedor buscarproveedor(int idproveedor);
+    public boolean agregarproveedor(Proveedor proveedor);
+    public boolean editarproveedor(Proveedor proveedor);
+    public boolean eliminarproveedor(int proveedor);
 }
